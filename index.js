@@ -58,8 +58,37 @@ const bacaData = () => {
 
 // Fungsi tambah data
 const tambahData = () => {
+    rl.question ("Masukkan Judul Anime: ", (judul) => {
+        rl.question ("Masukkan Genre: ", (genre) => {
+            rl.question ("Masukkan Tahun: ", (tahun) => {
+                rl. question ("Masukkan Studio: ", (studio) => {
+                    rl. question ("Masukkan Score: ", (score) => {
+                        fs.readFile("file.json", "utf8", (err, data) => {
+                            if (err) {
+                            console.error("Gagal membaca file:", err);
+                            rl.close();
+                            return;
+                            }
+                            // pake let biar bisa ganti seluruh value dalam objek
+                            let database = JSON.parse(data);
+                            const newAnime = { Judul: judul, Genre: genre, Tahun: tahun, Studio: studio, Score: score };
+                            database.anime.push(newAnime);
 
-}
+                            fs.writeFile("file.json", JSON.stringify(database, null, 4), (err) => {
+                                if (err) {
+                                    console.error("Gagal menambahkan anime:", err);
+                                } else {
+                                    console.log("Anime berhasil ditambahkan!");
+                                }
+                                rl.close();
+                            });
+                        });
+                    });
+                });
+            });
+        });
+    });
+};
 
 
 // Fungsi update data
