@@ -1,8 +1,6 @@
 # Tugas2-Kelompok7
 
 
-## Project 2 PPL
-
 ## Sistem Database Sederhana
 
 Buatlah sistem database sederhana dengan menggunakan node js. sistem dapat memberikan data dan menambahkan data. database yang digunakan adalah JSON.
@@ -37,10 +35,4 @@ Kalian bebas berekspresi bagaimana pun dengan sistem tersebut, bisa menambahkan 
 - mengupdate item
 - menghapus item
 - fungsi lainnya yang keren
-
-
-## Waktu dan Tempat Pengumpulan
-Tenggat waktu pengerjaan tugas adalah `h-1` masuk kelas
-Tempat pengumpulan di `spreadsheet` kelompok
-
 
