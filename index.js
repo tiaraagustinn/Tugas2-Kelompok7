@@ -36,7 +36,7 @@ const bacaData = () => {
                     console.log(`Genre  : ${viewAnime.Genre}`);
                     console.log(`Tahun  : ${viewAnime.Tahun}`);
                     console.log(`Studio : ${viewAnime.Studio}`);
-                    console.log(`Score : ${viewAnime.Score}\n`);
+                    console.log(`Score  : ${viewAnime.Score}\n`);
                 } else if (index === database.anime.length) {
                     console.log("\n=== Semua Anime ===");
                     database.anime.forEach((anime, idx) => {
@@ -44,7 +44,7 @@ const bacaData = () => {
                         console.log(`Genre  : ${anime.Genre}`);
                         console.log(`Tahun  : ${anime.Tahun}`);
                         console.log(`Studio : ${anime.Studio}`);
-                        console.log(`Score : ${anime.Score}`);
+                        console.log(`Score  : ${anime.Score}`);
                     });
                 } else {
                     console.log("Nomor tidak valid.");
