@@ -1,0 +1,28 @@
+{
+    "anime": [
+        {
+            "Judul": "Shingeki no Kyoujin",
+            "Genre": "Action",
+            "Tahun": "2013",
+            "Studio": "Wit Studio"
+        },
+        {
+            "Judul": "Haikyuu",
+            "Genre": "Sports",
+            "Tahun": "2014",
+            "Studio": "Production I.G"
+        },
+        {
+            "Judul": "Monster",
+            "Genre": "Mystery",
+            "Tahun": "2004",
+            "Studio": "Madhouse"
+        },
+        {
+            "Judul": "Ajin",
+            "Genre": "Action",
+            "Tahun": "2016",
+            "Studio": "Polygon Pictures"
+        }
+    ]
+}
