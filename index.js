@@ -93,8 +93,62 @@ const tambahData = () => {
 
 // Fungsi update data
 const updateData = () => {
+    fs.readFile("file.json", "utf-8", (err, data) => {
+        if (err) {
+            console.error("Gagal membaca file:", err);
+            rl.close();
+            return;
+        }
 
-}
+        let database = JSON.parse(data);
+        console.log("\n\t+~~~~~~~~~~~~~~~~~~~+");
+        console.log("\t|    Update Anime   |");
+        console.log("\t+~~~~~~~~~~~~~~~~~~~+");
+        database.anime.forEach((anime, index) => {
+            console.log(`${index + 1}. ${anime.Judul} (${anime.Tahun}) - ${anime.Genre} [${anime.Studio}]`);
+        });
+
+        rl.question("Masukkan nomor anime yang ingin diperbarui: ", (nomor) => {
+            let index = parseInt(nomor) - 1;
+            
+            if (index >= 0 && index < database.anime.length) {
+                let anime = database.anime[index];
+                console.log("Masukkan data baru (biarkan kosong untuk tidak mengubah):");
+                
+                rl.question(`Judul (${anime.Judul}): `, (judul) => {
+                    rl.question(`Genre (${anime.Genre}): `, (genre) => {
+                        rl.question(`Tahun (${anime.Tahun}): `, (tahun) => {
+                            rl.question(`Studio (${anime.Studio}): `, (studio) => {
+                                rl.question(`Score (${anime.Score}): `, (score) => {
+                                    database.anime[index] = {
+                                        Judul: judul || anime.Judul,
+                                        Genre: genre || anime.Genre,
+                                        Tahun: tahun || anime.Tahun,
+                                        Studio: studio || anime.Studio,
+                                        Score: score || anime.Score
+                                    };
+
+                                    fs.writeFile("file.json", JSON.stringify(database, null, 4), (err) => {
+                                        if (err) {
+                                            console.error("Gagal memperbarui data:", err);
+                                        } else {
+                                            console.log("Anime berhasil diperbarui!");
+                                        }
+                                        rl.close();
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+            } else {
+                console.log("Nomor tidak valid.");
+                rl.close();
+            }
+        });
+    });
+};
+
 
 
 // Fungsi Hapus data
