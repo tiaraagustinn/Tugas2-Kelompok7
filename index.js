@@ -8,7 +8,7 @@ const rl = readline.createInterface({
 
 // Fungsi tampilkan data
 const bacaData = () => {
-    fs.readFile("file.json", "utf-8", (err, data) => {
+    fs.readFile("data.json", "utf-8", (err, data) => {
         if (err) {
             console.log("Mana filenya boi", err);
             rl.close();
@@ -70,7 +70,7 @@ const updateData = () => {
 
 // Fungsi Hapus data
 const hapusData = () => {
-    fs.readFile("file.json", "utf-8", (err, data) => {
+    fs.readFile("data.json", "utf-8", (err, data) => {
         if (err) {
             console.error("Gagal membaca file:", err);
             rl.close();
@@ -93,7 +93,7 @@ const hapusData = () => {
                 console.log(`Anime "${deletedAnime[0].Judul}" berhasil dihapus.`);
 
                 // Tulis ulang file JSON tanpa anime yang dihapus
-                fs.writeFile("file.json", JSON.stringify(database, null, 4), (err) => {
+                fs.writeFile("data.json", JSON.stringify(database, null, 4), (err) => {
                     if (err) {
                         console.error("Gagal menyimpan perubahan:", err);
                     }
