@@ -5,77 +5,77 @@
             "Genre": "Action",
             "Tahun": "2013",
             "Studio": "Wit Studio",
-            "Score" : 8.56
+            "Score": 8.56
         },
         {
             "Judul": "Haikyuu",
             "Genre": "Sports",
             "Tahun": "2014",
             "Studio": "Production I.G",
-            "Score" : 8.44
+            "Score": 8.44
         },
         {
             "Judul": "Monster",
             "Genre": "Mystery",
             "Tahun": "2004",
             "Studio": "Madhouse",
-            "Score" : 8.88
+            "Score": 8.88
         },
         {
             "Judul": "Ajin",
             "Genre": "Action",
             "Tahun": "2016",
             "Studio": "Polygon Pictures",
-            "Score" : 7.38
+            "Score": 7.38
         },
         {
             "Judul": "Fullmental Alchemist",
             "Genre": "Action",
             "Tahun": "2009",
             "Studio": "Bones",
-            "Score" : 9.10
+            "Score": 9.1
         },
         {
             "Judul": "Kusuriya no Hitorigoto",
             "Genre": "Drama",
             "Tahun": "2023",
             "Studio": "TOHO Animation",
-            "Score" : 8.88
+            "Score": 8.88
         },
         {
             "Judul": "Made in Abyss",
             "Genre": "Adventure",
             "Tahun": "2017",
             "Studio": "Kinema Citrus",
-            "Score" : 8.64
+            "Score": 8.64
         },
         {
             "Judul": "Btooom",
             "Genre": "Action",
             "Tahun": "2012",
             "Studio": "Madhouse",
-            "Score" : 7.27
+            "Score": 7.27
         },
         {
             "Judul": "Vinland Saga",
             "Genre": "Action",
             "Tahun": "2019",
             "Studio": "Wit Studio",
-            "Score" : 8.76
+            "Score": 8.76
         },
         {
             "Judul": "Zankyou no Terror",
             "Genre": "Mystery",
             "Tahun": "2014",
             "Studio": "MAPPA",
-            "Score" : 8.08
+            "Score": 8.08
         },
         {
             "Judul": "Boku dake ga Inai Machi",
             "Genre": "Mystery",
             "Tahun": "2016",
             "Studio": "A-1 Pictures",
-            "Score" : 8.30
+            "Score": 8.3
         }
     ]
 }

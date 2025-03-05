@@ -63,7 +63,7 @@ const tambahData = () => {
             rl.question ("Masukkan Tahun: ", (tahun) => {
                 rl. question ("Masukkan Studio: ", (studio) => {
                     rl. question ("Masukkan Score: ", (score) => {
-                        fs.readFile("file.json", "utf8", (err, data) => {
+                        fs.readFile("data.json", "utf8", (err, data) => {
                             if (err) {
                             console.error("Gagal membaca file:", err);
                             rl.close();
@@ -74,7 +74,7 @@ const tambahData = () => {
                             const newAnime = { Judul: judul, Genre: genre, Tahun: tahun, Studio: studio, Score: score };
                             database.anime.push(newAnime);
 
-                            fs.writeFile("file.json", JSON.stringify(database, null, 4), (err) => {
+                            fs.writeFile("data.json", JSON.stringify(database, null, 4), (err) => {
                                 if (err) {
                                     console.error("Gagal menambahkan anime:", err);
                                 } else {
@@ -93,7 +93,7 @@ const tambahData = () => {
 
 // Fungsi update data
 const updateData = () => {
-    fs.readFile("file.json", "utf-8", (err, data) => {
+    fs.readFile("data.json", "utf-8", (err, data) => {
         if (err) {
             console.error("Gagal membaca file:", err);
             rl.close();
@@ -128,7 +128,7 @@ const updateData = () => {
                                         Score: score || anime.Score
                                     };
 
-                                    fs.writeFile("file.json", JSON.stringify(database, null, 4), (err) => {
+                                    fs.writeFile("data.json", JSON.stringify(database, null, 4), (err) => {
                                         if (err) {
                                             console.error("Gagal memperbarui data:", err);
                                         } else {
