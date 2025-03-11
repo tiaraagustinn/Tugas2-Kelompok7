@@ -1,5 +1,9 @@
 # Tugas2-Kelompok7
 
+## Kelompok
+- Nauval Rifqi (2208107010075)
+- Tiara Agustin (2208107010004)
+- Azri Harniza (2208107010034)
 
 ## Sistem Database Sederhana
 
